@@ -32,7 +32,11 @@ Install dan konfigurasi kan OpenGL dengan IDE tertentu
 ## Hasil Pengerjaan
 > **PERINGATAN** : Tugas ini dibuat hanya untuk Sistem Operasi GNU/Linux Distribusi Ubuntu x86_64. Sistem Operasi/Distribusi lain perlu menyesuaikan.
 ### Installasi OpenGL
-1. Install library `GLEW` dan `GLFW`
+1. Install library `GLUT` dan `mesa-utils`
+    ```bash
+    $ sudo apt-get install freeglut3-dev mesa-utils
+    ```
+2. Install library `GLEW` dan `GLFW`
     ```bash
     $ sudo apt-get install libglew-dev libglew2.0 libglfw3 libglfw3-dev
     ```
@@ -72,7 +76,7 @@ Install dan konfigurasi kan OpenGL dengan IDE tertentu
     $ touch autocompile.sh
     $ vim autocompile.sh
     ```
-2. isi script dapat dilihat pada file `autocompile.sh` dalam repo ini, atau dapat dilihat pada seksi `Referensi` dibawah. copy gile tersebut kedalam script `autocompile` anda
+2. isi script dapat dilihat pada file `autocompile.sh` dalam repo ini, atau dapat dilihat pada seksi `Referensi` dibawah. copy file tersebut kedalam script `autocompile` anda
 3. Save lalu Exit
 4. Buat file tersebut agar dapat di eksekusi
     ```bash
@@ -97,3 +101,5 @@ Install dan konfigurasi kan OpenGL dengan IDE tertentu
     vim src/main.cpp
     ```
 6. Aplikasi akan berjalan setiap anda membuat save pada setiap file didalam folder `src/`
+
+### Hasil Program
